@@ -19,7 +19,7 @@ app.use(function(req, res, next) {
 const db_config = require('./knexfile');
 const knex = require('knex')(db_config);
 
-app.listen(4000, function() {
+app.listen(process.env.PORT || 4000, function() {
   console.log('Battleship server listening on port 4000...');
 
   app.get('/', function(req, res) {
