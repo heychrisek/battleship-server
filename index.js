@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 require('express-namespace');
 
 const NUM_SHIPS = 10;
@@ -22,7 +23,7 @@ app.listen(4000, function() {
   console.log('Battleship server listening on port 4000...');
 
   app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/../client/build/index.html');
+    res.sendFile(path.resolve(__dirname + '/../client/build/index.html'));
   });
 
   app.namespace('/api', function() {
