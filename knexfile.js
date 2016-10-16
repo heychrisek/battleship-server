@@ -4,10 +4,8 @@ module.exports = {
     connection: { user: 'cek', database: 'battleship', host: 'localhost' }
   },
   production: {
-    client: 'pg',
-    connection: {
-      database: 'postgres://trudlkvcwyqudi:nnFj0zaxKBjDl_nVFJK7BesuU7@ec2-184-72-240-189.compute-1.amazonaws.com:5432/d9i9dcnohjdc8v'
-    },
+    client: 'postgresql',
+    connection: 'postgres://nkpwgmaxfjshhp:c6DIW4EziII-effGiHO7dFSjad@ec2-54-243-203-87.compute-1.amazonaws.com:5432/dadraqijfvt324',
     migrations: {
       tableName: 'migrations'
     }
