@@ -4,8 +4,10 @@ module.exports = {
     connection: { user: 'cek', database: 'battleship', host: 'localhost' }
   },
   production: {
-    client: 'pg',
+    client: 'postgresql',
     connection: {
+      host: 'localhost',
+      user: process.env.user,
       database: 'postgres://nkpwgmaxfjshhp:c6DIW4EziII-effGiHO7dFSjad@ec2-54-243-203-87.compute-1.amazonaws.com:5432/dadraqijfvt324',
     },
     pool: {
@@ -13,7 +15,7 @@ module.exports = {
         max: 10
     },
     migrations: {
-      tableName: 'migrations'
+        tableName: 'migrations'
     }
   }
 };
