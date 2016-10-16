@@ -23,7 +23,8 @@ app.listen(4000, function() {
   console.log('Battleship server listening on port 4000...');
 
   app.get('/', function(req, res) {
-    res.sendFile(path.resolve(__dirname + '/../client/build/index.html'));
+    // res.sendFile(path.resolve(__dirname + '/../client/build/index.html'));
+    res.send("serving Battleship...");
   });
 
   app.namespace('/api', function() {
