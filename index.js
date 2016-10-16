@@ -1,4 +1,3 @@
-require('locus')
 const express = require('express');
 require('express-namespace');
 
