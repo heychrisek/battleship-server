@@ -5,17 +5,9 @@ module.exports = {
   },
   production: {
     client: 'postgresql',
-    connection: {
-      host: 'localhost',
-      user: process.env.user,
-      database: 'postgres://nkpwgmaxfjshhp:c6DIW4EziII-effGiHO7dFSjad@ec2-54-243-203-87.compute-1.amazonaws.com:5432/dadraqijfvt324',
-    },
-    pool: {
-        min: 2,
-        max: 10
-    },
+    connection: 'postgres://nkpwgmaxfjshhp:c6DIW4EziII-effGiHO7dFSjad@ec2-54-243-203-87.compute-1.amazonaws.com:5432/dadraqijfvt324',
     migrations: {
-        tableName: 'migrations'
+      tableName: 'migrations'
     }
   }
 };
